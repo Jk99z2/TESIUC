@@ -29,7 +29,7 @@ class GenerateMenus
                 ]);
 
             // Notifications
-            $menu->add('<i class="nav-icon fas fa-bell"></i> Notifications', [
+            $menu->add('<i class="nav-icon fas fa-bell"></i> Notificaciones', [
                 'route' => 'backend.notifications.index',
                 'class' => 'nav-item',
             ])
@@ -52,7 +52,7 @@ class GenerateMenus
                 ]);
 
             // Settings
-            $menu->add('<i class="nav-icon fas fa-cogs"></i> Settings', [
+            $menu->add('<i class="nav-icon fas fa-cogs"></i> Configuración', [
                 'route' => 'backend.settings',
                 'class' => 'nav-item',
             ])
@@ -66,7 +66,7 @@ class GenerateMenus
                 ]);
 
             // Backup
-            $menu->add('<i class="nav-icon fas fa-archive"></i> Backups', [
+            $menu->add('<i class="nav-icon fas fa-archive"></i> Respaldos', [
                 'route' => 'backend.backups.index',
                 'class' => 'nav-item',
             ])
@@ -80,7 +80,7 @@ class GenerateMenus
                 ]);
 
             // Access Control Dropdown
-            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-user-gear"></i> Access Control', [
+            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-user-gear"></i> Control de acceso', [
                 'class' => 'nav-group',
             ])
                 ->data([
@@ -97,7 +97,7 @@ class GenerateMenus
             ]);
 
             // Submenu: Users
-            $accessControl->add('<i class="nav-icon fa-solid fa-user-group"></i> Users', [
+            $accessControl->add('<i class="nav-icon fa-solid fa-user-group"></i> Usuarios', [
                 'route' => 'backend.users.index',
                 'class' => 'nav-item',
             ])
@@ -126,7 +126,7 @@ class GenerateMenus
 
             // Log Viewer
             // Log Viewer Dropdown
-            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-list-check"></i> Log Viewer', [
+            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-list-check"></i> Ver Logs', [
                 'class' => 'nav-group',
             ])
                 ->data([
@@ -155,7 +155,7 @@ class GenerateMenus
                 ]);
 
             // Submenu: Log Viewer Logs by Days
-            $accessControl->add('<i class="nav-icon fa-solid fa-list-ol"></i> Logs by Days', [
+            $accessControl->add('<i class="nav-icon fa-solid fa-list-ol"></i> Logs por dia', [
                 'route' => 'log-viewer::logs.list',
                 'class' => 'nav-item',
             ])

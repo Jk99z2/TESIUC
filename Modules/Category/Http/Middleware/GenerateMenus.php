@@ -22,7 +22,7 @@ class GenerateMenus
          */
         \Menu::make('admin_sidebar', function ($menu) {
             // Categories
-            $menu->add('<i class="nav-icon fa-solid fa-sitemap"></i> '.__('Categories'), [
+            $menu->add('<i class="nav-icon fa-solid fa-sitemap"></i> '.__('Categorias'), [
                 'route' => 'backend.categories.index',
                 'class' => 'nav-item',
             ])

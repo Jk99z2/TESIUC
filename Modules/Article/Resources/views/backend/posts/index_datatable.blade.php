@@ -55,7 +55,7 @@
                                 Name
                             </th>
                             <th>
-                                Categoty
+                                Category
                             </th>
                             <th class="text-end">
                                 Action
