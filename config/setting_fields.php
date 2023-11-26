@@ -14,7 +14,7 @@ return [
                 'label' => 'App Name', // you know what label it is
                 'rules' => 'required|min:2|max:50', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'Laravel Starter', // default value if you want
+                'value' => 'TESIUC', // default value if you want
             ],
             [
                 'type' => 'text', // input fields type
