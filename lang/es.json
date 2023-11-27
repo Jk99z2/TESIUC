@@ -14,7 +14,7 @@
     "Password": "Contraseña",
     "Password Confirmation": "Confirmación de Contraseña",
 
-
+    "Users": "Usuarios",
     "Value": "Valor",
     "Index": "Índice",
     "List": "Lista",
@@ -68,7 +68,7 @@
     "All values of :module_name (Id: :id)": "Todos los valores de <b>:module_name (Id: :id)</b>.",
     "Are you sure?": "¿Está seguro?",
     "Send confirmation email": "Enviar Correo de Confirmación",
-    ":module_name Management Dashboard": "Panel de Gestión de :module_name",
+    ":module_name Management Dashboard": "Panel de gestión de :module_name",
     "Create new :module_name": "Crear nuevo :module_name",
     "Backup": "Respaldar",
     "Backups": "Respaldos",
