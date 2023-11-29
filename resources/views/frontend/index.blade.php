@@ -38,24 +38,23 @@
 
     <section class="mb-20">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="flex flex-col w-full justify-center items-start md:text-left md:mr-10">
+            <div class="flex flex-col w-full justify-center items-start md:text-left mr-4">
                 <h1 class="my-4 text-5xl font-bold leading-tight mb-8">
                     ¿Qué es TESIUC?
                 </h1>
                 <p class="leading-normal text-2xl mb-8 ml-3 text-justify">
-                    TESIUC es la plataforma de control y seguimiento de tesis en línea de la Universidad de Colima. Esta
+                    TESIUC es una plataforma de control y seguimiento de tesis en línea de la Universidad de Colima. Esta
                     plataforma integra herramientas para la gestión de tesis, la gestión de presentaciones, la revisión e
                     interacción entre autores, así como el seguimiento y evaluación de los estudiantes.
                 </p>
             </div>
-            <div class="w-full md:w-1/3 py-6 text-center rounded">
+            <div class="w-full md:w-1/3 py-6 text-center rounded pl-5">
                 <img class="w-full md:w-4/5 z-50 rounded-lg" src="{{ asset('img/student.jpg') }}">
             </div>
         </div>
     </section>
 
     <section class="mb-20">
-        <!-- Four columns container with some information about the application -->
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap">
                 <!-- Card 1 -->
