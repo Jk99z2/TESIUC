@@ -29,12 +29,24 @@
                         <a href="{{ route('frontend.categories.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                             {{__('Categories')}}
                         </a>
+                        {{-- Check if the user is logged, show Tags and Comments elements --}}
+                        @if(auth()->check())
                         <a href="{{ route('frontend.tags.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                             {{__('Tags')}}
                         </a>
                         <a href="{{ route('frontend.comments.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                             {{__('Comments')}}
                         </a>
+                        @endif
+                        {{-- Check if the user is logged, show Tags and Comments elements --}}
+                        {{-- <a href="{{ route('frontend.tags.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
+                            {{__('Tags')}}
+                        {{-- <a href="{{ route('frontend.tags.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
+                            {{__('Tags')}}
+                        </a>
+                        <a href="{{ route('frontend.comments.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
+                            {{__('Comments')}}
+                        </a> --}}
                     </div>
                 </div>
             </div>

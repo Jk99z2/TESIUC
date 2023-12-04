@@ -27,7 +27,7 @@
         @php
         $details_url = route("frontend.$module_name.show",[encode_id($$module_name_singular->id), $$module_name_singular->slug]);
         @endphp
-        <x-frontend.card :url="$details_url" :name="$$module_name_singular->name" :image="$$module_name_singular->featured_image">
+        <x-frontend.card :url="$details_url" :name="$$module_name_singular->name">
             @if($$module_name_singular->created_by_alias)
             <div class="flex flex-row items-center my-4">
                 <img class="w-5 h-5 sm:w-8 sm:h-8 rounded-full" src="{{asset('img/avatars/'.rand(1, 8).'.jpg')}}" alt="Author profile image">
