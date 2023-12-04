@@ -19,7 +19,7 @@
             @include('frontend.includes.messages')
         </div>
         <div class="w-full sm:w-8/12 mb-4 sm:mb-0">
-            <img class="object-cover object-center rounded shadow-md" alt="{{$$module_name_singular->name}}" src="{{$$module_name_singular->featured_image}}">
+            {{-- <img class="object-cover object-center rounded shadow-md" alt="{{$$module_name_singular->name}}" src="{{$$module_name_singular->featured_image}}"> --}}
         </div>
     </div>
 </section>

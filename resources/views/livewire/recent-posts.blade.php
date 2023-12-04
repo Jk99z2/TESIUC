@@ -17,7 +17,7 @@
                 <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white rounded-md flex flex-1 items-center p-4">
                     <div class="flex flex-col h-10 justify-center items-center mr-4">
                         <a href="{{$details_url}}" class="block relative">
-                            <img alt="{{ $row->name }}" src="{{$row->featured_image}}" class="mx-auto object-cover rounded h-10 " />
+                            {{-- <img alt="{{ $row->name }}" src="{{$row->featured_image}}" class="mx-auto object-cover rounded h-10 " /> --}}
                         </a>
                     </div>
                     <div class=" pl-1">

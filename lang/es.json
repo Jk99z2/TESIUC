@@ -114,5 +114,16 @@
 
     "Draft": "Borrador",
     "Published": "Publicado",
-    "Unpublished": "No Publicado"
+    "Unpublished": "No Publicado",
+    "Written by": "Escrito por",
+    "Posted on": "Publicado en",
+    "Category": "Categoría",
+    "Tag": "Etiqueta",
+    "Comment": "Comentario",
+    "Comments List": "Lista de Comentarios",
+    "Login & Write comment": "Iniciar Sesión y escribir Comentario",
+    "Share with others": "Compartir con otros",
+    "Published at": "Publicado el",
+    "Recent Posts": "Posts recientes",
+    "Recently published articles": "Artículos publicados recientemente"
 }
