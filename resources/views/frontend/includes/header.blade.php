@@ -37,6 +37,9 @@
                         <a href="{{ route('frontend.comments.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                             {{__('Comments')}}
                         </a>
+                        <a href="{{ route('frontend.temas.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
+                            {{__('Temas')}}
+                        </a>
                         @endif
                         {{-- Check if the user is logged, show Tags and Comments elements --}}
                         {{-- <a href="{{ route('frontend.tags.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">

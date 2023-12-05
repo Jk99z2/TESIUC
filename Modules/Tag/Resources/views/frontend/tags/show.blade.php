@@ -34,7 +34,6 @@
         <div class="">
             <div class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <a href="{{$details_url}}">
-                    <img class="rounded-t-lg" src="{{$post->featured_image}}" alt="{{$post->name}}" />
                 </a>
                 <div class="p-5 flex flex-col items-stretch">
                     <a href="{{$details_url}}">

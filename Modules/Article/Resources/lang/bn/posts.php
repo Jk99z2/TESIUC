@@ -7,7 +7,6 @@ return [
     'created_by_alias' => 'Author Name Alias',
     'intro' => 'Intro',
     'content' => 'Content',
-    'featured_image' => 'Featured Image',
     'category_id' => 'ক্যাটাগরি',
     'type' => 'Type',
     'is_featured' => 'Is Featured',
