@@ -1,0 +1,13 @@
+{
+    "name": "Tema",
+    "alias": "tema",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Tema\\Providers\\TemaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

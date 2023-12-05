@@ -31,7 +31,7 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href='{{ route("backend.$module_name.trashed") }}'>
-                                <i class="fas fa-eye-slash"></i> View trash
+                                <i class="fas fa-eye-slash"></i> @lang("View trash")
                             </a>
                         </li>
                         <!-- <li>
@@ -52,19 +52,19 @@
                                 #
                             </th>
                             <th>
-                                Name
+                                @lang("tema::text.name")
                             </th>
                             <th>
-                                Category
+                                @lang("tema::text.slug")
                             </th>
                             <th>
-                                Type
+                                @lang("tema::text.updated_at")
                             </th>
                             <th>
-                                Image
+                                @lang("tema::text.created_by")
                             </th>
                             <th class="text-end">
-                                Action
+                                @lang("tema::text.action")
                             </th>
                         </tr>
                     </thead>
@@ -76,17 +76,16 @@
                                 {{ $module_name_singular->id }}
                             </td>
                             <td>
-                                <strong>{{ $module_name_singular->name }}</strong>
-                                <br>
-                                <small class="text-muted">Updated At: {{ $module_name_singular->updated_at->diffForHumans() }}</small>
+                                <a href="{{ url("admin/$module_name", $module_name_singular->id) }}">{{ $module_name_singular->name }}</a>
                             </td>
                             <td>
-                                {{ $module_name_singular->category_name }}
+                                {{ $module_name_singular->slug }}
                             </td>
                             <td>
-                                {{ $module_name_singular->type }}
+                                {{ $module_name_singular->updated_at->diffForHumans() }}
                             </td>
                             <td>
+                                {{ $module_name_singular->created_by }}
                             </td>
                             <td class="text-end">
                                 <a href='{!!route("backend.$module_name.edit", $module_name_singular)!!}' class='btn btn-sm btn-primary mt-1' data-toggle="tooltip" title="Edit {{ ucwords(Str::singular($module_name)) }}"><i class="fas fa-wrench"></i></a>

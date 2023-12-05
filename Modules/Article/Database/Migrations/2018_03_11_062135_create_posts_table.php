@@ -23,7 +23,6 @@ class CreatePostsTable extends Migration
             $table->integer('category_id')->unsigned()->nullable();
             $table->string('category_name')->nullable();
             $table->integer('is_featured')->nullable();
-            $table->string('featured_image')->nullable();
 
             $table->string('meta_title')->nullable();
             $table->text('meta_keywords')->nullable();

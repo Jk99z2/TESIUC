@@ -16,7 +16,7 @@
         @else
         <div class="flex justify-center mx-auto">
             <div>
-                <button class="btn btn-primary" @click="commentBlock = !commentBlock">{{__('Write a comment')}}</button>
+                <button class="btn btn-primary" @click="commentBlock = !commentBlock">{{__('Escribe un comentario')}}</button>
             </div>
         </div>
 
