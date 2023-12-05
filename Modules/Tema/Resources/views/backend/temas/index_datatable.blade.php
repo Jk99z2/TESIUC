@@ -49,13 +49,19 @@
                     <thead>
                         <tr>
                             <th>
-                                #
+                                ID
                             </th>
                             <th>
                                 @lang("tema::text.name")
                             </th>
                             <th>
                                 @lang("tema::text.updated_at")
+                            </th>
+                            <th>
+                                @lang("tema::text.propuesta_por")
+                            </th>
+                            <th>
+                                @lang("tema::text.category_name")
                             </th>
                             <th class="text-end">
                                 @lang("tema::text.action")
@@ -112,6 +118,14 @@
             {
                 data: 'updated_at',
                 name: 'updated_at'
+            },
+            {
+                data: 'propuesta_por',
+                name: 'propuesta_por'
+            },
+            {
+                data: 'category_name',
+                name: 'category_name'
             },
             {
                 data: 'action',

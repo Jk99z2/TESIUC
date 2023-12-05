@@ -135,4 +135,59 @@
             {{ html()->select($field_name, $select_options)->placeholder($field_placeholder)->class('form-control select2')->attributes(["$required"]) }}
         </div>
     </div>
-</div>
+</div>\
+
+@push('after-scripts')
+<script type="module">
+    $(document).ready(function() {
+        $(document).on('select2:open', () => {
+            document.querySelector('.select2-search__field').focus();
+            document.querySelector('.select2-container--open .select2-search__field').focus();
+        });
+
+        $('.select2-category').select2({
+            theme: "bootstrap4",
+            placeholder: '@lang("Select an option")',
+            minimumInputLength: 2,
+            allowClear: true,
+            ajax: {
+                url: '{{route("backend.categories.index_list")}}',
+                dataType: 'json',
+                data: function(params) {
+                    return {
+                        q: $.trim(params.term)
+                    };
+                },
+                processResults: function(data) {
+                    return {
+                        results: data
+                    };
+                },
+                cache: true
+            }
+        });
+
+        $('.select2-tags').select2({
+            // theme: "bootstrap4",
+            placeholder: '@lang("Select an option")',
+            minimumInputLength: 2,
+            allowClear: true,
+            ajax: {
+                url: '{{route("backend.tags.index_list")}}',
+                dataType: 'json',
+                data: function(params) {
+                    return {
+                        q: $.trim(params.term)
+                    };
+                },
+                processResults: function(data) {
+                    return {
+                        results: data
+                    };
+                },
+                cache: true
+            }
+        });
+    });
+</script>
+@endpush

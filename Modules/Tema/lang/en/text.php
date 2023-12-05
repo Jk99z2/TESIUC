@@ -2,14 +2,17 @@
 
 return [
 
-    'name' => 'Name',
+    'name' => 'Nombre',
     'slug' => 'Slug',
-    'description' => 'Description',
+    'description' => 'Descripcion',
     'status' => 'Status',
-    'created_by' => 'Created By',
-    'updated_at' => 'Updated At',
-    'updated_by' => 'Updated By',
-    'deleted_by' => 'Deleted By',
+    'created_by' => 'Creada por',
+    'updated_at' => 'Actualizada',
+    'updated_by' => 'Actualizada por',
+    'deleted_by' => 'Eliminada por',
+    'propuesta_por' => 'Propuesta por',
+    'category_name' => 'Categoria',
+    'category_id' => 'Categoria',
     'action' => 'Action',
 
 ];

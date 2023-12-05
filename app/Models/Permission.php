@@ -28,6 +28,12 @@ class Permission extends \Spatie\Permission\Models\Permission
             'create_backups',
             'download_backups',
             'delete_backups',
+
+            'view_temas',
+            'add_temas',
+            'edit_temas',
+            'delete_temas',
+            'restore_temas',
         ];
     }
 
