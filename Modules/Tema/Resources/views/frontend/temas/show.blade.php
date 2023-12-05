@@ -15,9 +15,9 @@
             <h1 class="text-3xl sm:text-4xl mb-4 font-medium text-gray-800">
                 {{$$module_name_singular->name}}
             </h1>
-            <p class="mb-8 leading-relaxed">
+            {{-- <p class="mb-8 leading-relaxed">
                 {{$$module_name_singular->description}}
-            </p>
+            </p> --}}
 
             @include('frontend.includes.messages')
         </div>
@@ -27,7 +27,7 @@
 <section class="bg-white text-gray-600 p-6 sm:p-20">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-            Content area.
+            {{$$module_name_singular->description}}
         </div>
     </div>
 </section>

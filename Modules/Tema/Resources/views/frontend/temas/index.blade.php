@@ -11,7 +11,7 @@
                 {{ __($module_title) }}
             </h1>
             <p class="mb-8 leading-relaxed">
-                The list of {{ __($module_name) }}.
+                Lista de temas disponibles {{ __($module_name) }}.
             </p>
 
             @include('frontend.includes.messages')
@@ -25,10 +25,16 @@
         @php
         $details_url = route("frontend.$module_name.show",[encode_id($$module_name_singular->id), $$module_name_singular->slug]);
         @endphp
-        
+
         <x-frontend.card :url="$details_url" :name="$$module_name_singular->name">
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 {{$$module_name_singular->description}}
+            </p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <strong>Fecha de creación:</strong> {{$$module_name_singular->created_at->format('d/m/Y')}}
+            </p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <strong>Propuesta por:</strong> {{$$module_name_singular->propuesta_por}}
             </p>
         </x-frontend.card>
 

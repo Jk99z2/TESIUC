@@ -8,6 +8,7 @@
 </x-backend-breadcrumbs>
 @endsection
 
+{{-- Campos de la tabla temas: name, slug, description, created_by, updated_by, deleted_by, created_at, updated_at, deleted_at, category_id, category_name, propuesta_por --}}
 @section('content')
 <div class="card">
     <div class="card-body">
@@ -61,6 +62,9 @@
                                 @lang("tema::text.updated_at")
                             </th>
                             <th>
+                                @lang("tema::propuesta_por")
+                            </th>
+                            <th>
                                 @lang("tema::text.created_by")
                             </th>
                             <th class="text-end">
@@ -86,6 +90,9 @@
                             </td>
                             <td>
                                 {{ $module_name_singular->created_by }}
+                            </td>
+                            <td>
+                                {{ $module_name_singular->category_name }}
                             </td>
                             <td class="text-end">
                                 <a href='{!!route("backend.$module_name.edit", $module_name_singular)!!}' class='btn btn-sm btn-primary mt-1' data-toggle="tooltip" title="Edit {{ ucwords(Str::singular($module_name)) }}"><i class="fas fa-wrench"></i></a>
